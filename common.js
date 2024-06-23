@@ -107,3 +107,19 @@ return""}},getLangIds:function(e){var t=e.id.slice(14);var n=t.indexOf(".");var 
 if(result==2){score++}}
 var scorePara=document.getElementById("clozelangScore"+ident);scorePara.innerHTML=$exe_i18n.yourScoreIs+score+"/"+inputs.length+"."}},recurseFindLangInputs:function(e,t,n){for(var r=0;r<e.childNodes.length;r++){var i=e.childNodes[r];if(i.id){if(i.id.search("clozelangBlank"+t)==0){n.push(i);continue}}
 if(i.hasChildNodes()){$exe.cloze.recurseFindLangInputs(i,t,n)}}},getLangInputs:function(e){var t=new Array;var n=document.getElementById("clozelang"+e);$exe.cloze.recurseFindLangInputs(n,e,t);return t},toggleLangFeedback:function(e){var t=document.getElementById("clozelangVar"+e+".feedbackId");if(t){var n=t.value;$exe.cloze.toggle(n)}}};if(typeof jQuery!="undefined"){$(function(){$exe.init();});$(window).load(function(){$exe.mediaReplace();});}
+
+// JavaScript to add the code to the <main> section
+document.addEventListener('DOMContentLoaded', () => {
+    const mainElement = document.querySelector('#main');
+    if (mainElement) {
+        const counterHTML = `
+            <a href="https://www.webcontadores.com" title="contador de acessos">
+                <img src="https://counter8.optistats.ovh/private/webcontadores.php?c=1pka3t2cmqtjreklpzww1lm3gwea6zsr" border="0" title="contador de acessos" alt="contador de acessos">
+            </a>
+        `;
+        mainElement.insertAdjacentHTML('beforeend', counterHTML);
+    } else {
+        console.error("Elemento <main> não encontrado.");
+    }
+});
+

@@ -180,21 +180,6 @@ $(function(){
 console.log("style.js carregado corretamente")
 
 
-// JavaScript to add the code to the <main> section
-document.addEventListener('DOMContentLoaded', () => {
-    const mainElement = document.querySelector('#main');
-    if (mainElement) {
-        const counterHTML = `
-            <a href="https://www.webcontadores.com" title="contador de acessos">
-                <img src="https://counter8.optistats.ovh/private/webcontadores.php?c=1pka3t2cmqtjreklpzww1lm3gwea6zsr" border="0" title="contador de acessos" alt="contador de acessos">
-            </a>
-        `;
-        mainElement.insertAdjacentHTML('beforeend', counterHTML);
-    } else {
-        console.error("Elemento <main> não encontrado.");
-    }
-});
-
 
 
 
