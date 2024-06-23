@@ -113,13 +113,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainElement = document.querySelector('#main');
     if (mainElement) {
         const counterHTML = `
-            <a href="https://www.webcontadores.com" title="contador de acessos">
-                <img src="https://counter8.optistats.ovh/private/webcontadores.php?c=1pka3t2cmqtjreklpzww1lm3gwea6zsr" border="0" title="contador de acessos" alt="contador de acessos">
-            </a>
+
+		<a href='https://www.webcontadores.com' title='contador de visitas blogger'><img src='https://counter4.optistats.ovh/private/webcontadores.php?c=grrmsg7da3nd22a1txyyjxcu7j7ewe71' border='0' title='contador de visitas blogger' alt='contador de visitas blogger'></a>
+
         `;
         mainElement.insertAdjacentHTML('beforeend', counterHTML);
     } else {
         console.error("Elemento <main> não encontrado.");
     }
 });
+
+
+
+
+
+
+
+
 
